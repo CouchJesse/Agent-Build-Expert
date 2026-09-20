@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 900" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <defs>
+    <style>
+      .title{font-size:26px;font-weight:700;fill:#1a1a2e}
+      .subtitle{font-size:14px;fill:#5c6370}
+      .board{font-size:16px;font-weight:700;fill:#fff}
+      .card{font-size:13px;font-weight:600;fill:#22252a}
+      .desc{font-size:11px;fill:#6b7280}
+      .num{font-size:11px;font-weight:700;fill:#9ca3af}
+    </style>
+  </defs>
+  <rect width="1240" height="900" fill="#f7f8fa"/>
+  <text x="620" y="46" text-anchor="middle" class="title">智能体设计模式 · 21 模式一图速览</text>
+  <text x="620" y="70" text-anchor="middle" class="subtitle">五大板块 · 源自《智能体设计模式：智能系统构建实战指南》 · 对应 references/01–21 分章</text>
+
+  <!-- 板块一 · 核心执行与任务分解 -->
+  <rect x="40" y="100" width="580" height="230" rx="10" fill="#eef4ff" stroke="#c7d7fe"/>
+  <rect x="40" y="100" width="580" height="40" rx="10" fill="#4f6ef7"/>
+  <text x="60" y="126" class="board">板块一 · 核心执行与任务分解</text>
+  <g>
+    <rect x="56" y="156" width="272" height="74" rx="8" fill="#fff" stroke="#d8e2fd"/>
+    <text x="70" y="178" class="num">01</text><text x="94" y="178" class="card">提示链 Prompt Chaining</text>
+    <text x="70" y="200" class="desc">线性分步拆解，上一步输出指导下一步</text>
+    <rect x="340" y="156" width="272" height="74" rx="8" fill="#fff" stroke="#d8e2fd"/>
+    <text x="354" y="178" class="num">02</text><text x="378" y="178" class="card">路由 Routing</text>
+    <text x="354" y="200" class="desc">按输入上下文条件选择路径或工具</text>
+    <rect x="56" y="240" width="272" height="74" rx="8" fill="#fff" stroke="#d8e2fd"/>
+    <text x="70" y="262" class="num">03</text><text x="94" y="262" class="card">并行化 Parallelization</text>
+    <text x="70" y="284" class="desc">并行执行独立子任务提升效率</text>
+    <rect x="340" y="240" width="272" height="74" rx="8" fill="#fff" stroke="#d8e2fd"/>
+    <text x="354" y="262" class="num">04</text><text x="378" y="262" class="card">规划 Planning</text>
+    <text x="354" y="284" class="desc">高层目标动态拆解为多步计划并适应调整</text>
+  </g>
+
+  <!-- 板块二 · 环境交互与知识 -->
+  <rect x="640" y="100" width="560" height="230" rx="10" fill="#eefaf3" stroke="#c8ecd9"/>
+  <rect x="640" y="100" width="560" height="40" rx="10" fill="#22a06b"/>
+  <text x="660" y="126" class="board">板块二 · 环境交互与知识</text>
+  <g>
+    <rect x="656" y="156" width="528" height="74" rx="8" fill="#fff" stroke="#d5f0e1"/>
+    <text x="670" y="178" class="num">05</text><text x="694" y="178" class="card">工具使用 Tool Use（函数调用）</text>
+    <text x="670" y="200" class="desc">调用外部 API / 数据库扩展能力；LLM 决策 + 框架执行</text>
+    <rect x="656" y="240" width="528" height="74" rx="8" fill="#fff" stroke="#d5f0e1"/>
+    <text x="670" y="262" class="num">06</text><text x="694" y="262" class="card">知识检索 RAG</text>
+    <text x="670" y="284" class="desc">检索知识库融入响应；事实锚定降幻觉；GraphRAG / 智能体 RAG</text>
+  </g>
+
+  <!-- 板块三 · 状态与自我提升 -->
+  <rect x="40" y="350" width="580" height="230" rx="10" fill="#fdf3ee" stroke="#f5d8c8"/>
+  <rect x="40" y="350" width="580" height="40" rx="10" fill="#e8672e"/>
+  <text x="60" y="376" class="board">板块三 · 状态与自我提升</text>
+  <g>
+    <rect x="56" y="406" width="272" height="74" rx="8" fill="#fff" stroke="#f7e0d2"/>
+    <text x="70" y="428" class="num">07</text><text x="94" y="428" class="card">反思 Reflection</text>
+    <text x="70" y="450" class="desc">自我批判、发现错误并迭代优化</text>
+    <rect x="340" y="406" width="272" height="74" rx="8" fill="#fff" stroke="#f7e0d2"/>
+    <text x="354" y="428" class="num">08</text><text x="378" y="428" class="card">记忆管理 Memory</text>
+    <text x="354" y="450" class="desc">Session / State / Memory 三层分离</text>
+    <rect x="56" y="490" width="556" height="74" rx="8" fill="#fff" stroke="#f7e0d2"/>
+    <text x="70" y="512" class="num">09</text><text x="94" y="512" class="card">学习与适应 Learning &amp; Adaptation</text>
+    <text x="70" y="534" class="desc">根据反馈与经验持续进化：SICA 自我改进、进化式优化</text>
+  </g>
+
+  <!-- 板块四 · 协作与通信 -->
+  <rect x="640" y="350" width="560" height="230" rx="10" fill="#f3eefa" stroke="#ddd0f5"/>
+  <rect x="640" y="350" width="560" height="40" rx="10" fill="#8b5cf6"/>
+  <text x="660" y="376" class="board">板块四 · 协作与通信</text>
+  <g>
+    <rect x="656" y="406" width="528" height="54" rx="8" fill="#fff" stroke="#e5d9f7"/>
+    <text x="670" y="428" class="num">10</text><text x="694" y="428" class="card">多智能体协作 Multi-Agent</text>
+    <text x="670" y="448" class="desc">顺序交接 / 并行 / 辩论 / 层级 / 专家团队 / 批评-审查者</text>
+    <rect x="656" y="472" width="528" height="54" rx="8" fill="#fff" stroke="#e5d9f7"/>
+    <text x="670" y="494" class="num">11</text><text x="694" y="494" class="card">模型上下文协议 MCP</text>
+    <text x="670" y="514" class="desc">标准化智能体与工具 / 数据源连接（与 12 A2A 互补）</text>
+    <rect x="656" y="538" width="528" height="30" rx="8" fill="#fff" stroke="#e5d9f7"/>
+    <text x="670" y="558" class="num">12</text><text x="694" y="558" class="card">智能体间通信 A2A</text>
+    <text x="850" y="558" class="desc">跨框架智能体互操作与任务交换</text>
+  </g>
+
+  <!-- 板块五 · 可靠性与工程化（横切） -->
+  <rect x="40" y="600" width="1160" height="270" rx="10" fill="#eef2f7" stroke="#cdd8e6"/>
+  <rect x="40" y="600" width="1160" height="40" rx="10" fill="#3b4a63"/>
+  <text x="60" y="626" class="board">板块五 · 可靠性与工程化（生产横切模式）</text>
+  <g>
+    <rect x="56" y="656" width="270" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="70" y="678" class="num">13</text><text x="94" y="678" class="card">目标设定与监控</text>
+    <text x="70" y="698" class="desc">目标 SMART 化 + 漂移检测</text>
+    <rect x="338" y="656" width="270" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="352" y="678" class="num">14</text><text x="376" y="678" class="card">异常处理与恢复</text>
+    <text x="352" y="698" class="desc">重试 / 降级 / 求助，受控失败</text>
+    <rect x="620" y="656" width="270" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="634" y="678" class="num">15</text><text x="658" y="678" class="card">人类参与环节 HITL</text>
+    <text x="634" y="698" class="desc">四干预点：审批/确认/歧义/终审</text>
+    <rect x="902" y="656" width="282" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="916" y="678" class="num">16</text><text x="940" y="678" class="card">资源感知优化</text>
+    <text x="916" y="698" class="desc">按成本/延迟动态选模型与资源</text>
+
+    <rect x="56" y="726" width="270" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="70" y="748" class="num">17</text><text x="94" y="748" class="card">推理技术</text>
+    <text x="70" y="768" class="desc">CoT / ToT / ReAct / 思考预算</text>
+    <rect x="338" y="726" width="270" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="352" y="748" class="num">18</text><text x="376" y="748" class="card">护栏与安全</text>
+    <text x="352" y="768" class="desc">输入输出过滤 / 权限校验 / 政策约束</text>
+    <rect x="620" y="726" width="270" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="634" y="748" class="num">19</text><text x="658" y="748" class="card">评估与监控</text>
+    <text x="634" y="768" class="desc">结果+过程导向 / 轨迹审查</text>
+    <rect x="902" y="726" width="282" height="58" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="916" y="748" class="num">20</text><text x="940" y="748" class="card">优先级排序</text>
+    <text x="916" y="768" class="desc">紧急/重要/依赖/成本多标准调度</text>
+
+    <rect x="56" y="796" width="1128" height="54" rx="8" fill="#fff" stroke="#dbe4ef"/>
+    <text x="70" y="818" class="num">21</text><text x="94" y="818" class="card">探索与发现</text>
+    <text x="250" y="818" class="desc">主动探索新策略与「未知的未知」：生成—辩论—进化循环（Co-Scientist 式）</text>
+    <text x="70" y="838" class="desc">方法论：build-guide 构建指导 · review-guide 评审修正 · decision-tree 选型决策树（references/methodology/）</text>
+  </g>
+</svg>
